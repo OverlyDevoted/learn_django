@@ -20,5 +20,8 @@ from learn import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('learn/', views.learn),
-    path('', views.home)
+    path('', views.home),
+    path('learn/<int:id>', views.detail),
+    path('learn/add', views.add),
+    path('learn/delete/<int:id>', views.delete)
 ]
